@@ -1,45 +1,16 @@
 #include <iostream>
 
 // Function prototype
-void printHelloWorld();
+float calculateVolume (float r, float h);
 
 int main()
 {
-	std::cout << "In main()" << std::endl;
-	// Function call
-	printHelloWorld();
-
-	float a = 0.1;
-
-	int count = 0;
-	while (count < 10)
-	{
-		a = a + 0.1;
-		count++;
-	}
-
-	if (a == 1.0)
-	{
-		std::cout << "a is 1.0" << std::endl;
-	}
-	else
-	{
-		std::cout << "a is not 1.0" << std::endl;
-	}
-	// This is a comment
-	std::cout << "Int division: " << float(7 / 4) << std::endl;
-	std::cout << "Float division: " << 7.0 / 4.0 << std::endl;
-	std::cout << "Mod division: " << 17 % 8 << std::endl;
-
-	unsigned int b = 2147483647;
-
-	std::cout << "b: " << b + 2147483647 << std::endl;
+	std::cout << "The volume is: " << calculateVolume(2.0, 3.0) << std::endl;
 
 	return 0;
 }
 
-// Function definition
-void printHelloWorld()
+float calculateVolume(float r, float h)
 {
-	std::cout << "Hello World!" << std::endl;
+	return 3.14159 * r * r * h;
 }
