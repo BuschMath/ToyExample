@@ -26,10 +26,10 @@ int main()
 	{
 		std::cout << "a is not 1.0" << std::endl;
 	}
-
-	std::cout << "Int division: " << (- 7) / 4 << std::endl;
+	// This is a comment
+	std::cout << "Int division: " << float(7 / 4) << std::endl;
 	std::cout << "Float division: " << 7.0 / 4.0 << std::endl;
-	std::cout << "Mod division: " << 7 % 4 << std::endl;
+	std::cout << "Mod division: " << 17 % 8 << std::endl;
 
 	unsigned int b = 2147483647;
 
