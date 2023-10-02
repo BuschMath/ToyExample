@@ -1,16 +1,14 @@
+#include <fstream>
+#include <string>
 #include <iostream>
 
-// Function prototype
-float calculateVolume (float r, float h);
+using namespace std;
 
 int main()
 {
-	std::cout << "The volume is: " << calculateVolume(2.0, 3.0) << std::endl;
+	cout << "a: " << 'a' << endl << "a: " << int('a') << endl;
+	cout << "a-32: " << 'a' - 32 << endl;
+	cout << "a+b-90: " << char('a' + 'b' - 90) << endl;
 
 	return 0;
-}
-
-float calculateVolume(float r, float h)
-{
-	return 3.14159 * r * r * h;
 }
